@@ -11,7 +11,7 @@
 }
 
 body {
-    background-size:100%;
+    background-size:cover;
 }
 
 .div_speed{
@@ -51,4 +51,5 @@ body {
 canvas {
     border:5px solid white;
     border-radius: 20px;
+    margin: 15px;;
 }
