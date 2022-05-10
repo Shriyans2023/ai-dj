@@ -31,31 +31,13 @@ function draw() {
 
         if(rightWristY > 0 && rightWristY <= 100)
         {
-            document.getElementById("speed").innerHTML = "Speed = 0.5x";
+            document.getElementById("speed").innerHTML = "harry potter";
             song.rate(0.5);
         }
         else if(rightWristY > 100 && rightWristY <= 200)
         {
-            document.getElementById("speed").innerHTML = "Speed = 1x";
+            document.getElementById("speed").innerHTML = "silent night";
             song.rate(1);
-        }
-        else if(rightWristY > 200 && rightWristY <= 300)
-        {
-            document.getElementById("speed").innerHTML = "Speed = 1.5x";
-            song.rate(1.5);
-
-        }
-        else if(rightWristY > 300 && rightWristY <= 400)
-        {
-            document.getElementById("speed").innerHTML = "Speed = 2x";
-            song.rate(2);
-
-        }
-        else if(rightWristY > 400 && rightWristY <= 500)
-        {
-            document.getElementById("speed").innerHTML = "Speed = 2.5x";
-            song.rate(2.5);
-
         }
     }
     if(scoreLeftWrist > 0.2)
@@ -75,6 +57,7 @@ function play()
 song.play();
 song.setVolume(1);
 song.rate(1);
+song.song(1)
 }
 
 function modelLoaded(){
